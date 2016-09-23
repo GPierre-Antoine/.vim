@@ -1,5 +1,5 @@
 syntax enable
-set number relativenumber
+set number
 set softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent

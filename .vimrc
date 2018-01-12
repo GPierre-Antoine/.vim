@@ -10,3 +10,8 @@ set showmatch
 set incsearch hlsearch
 
 set mouse=a
+set noerrorbells
+set vb t_vb=
+
+
+nnoremap <C-N><C-N> :set relativenumber!<cr>

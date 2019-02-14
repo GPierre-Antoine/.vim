@@ -19,6 +19,11 @@ nnoremap <C-PageUp> gg
 nnoremap <C-PageDown> G
 nnoremap <M-Left> u
 nnoremap <M-Right> <C-R>
+
+nnoremap <M-Up> zr
+nnoremap <M-S-Up> zR
+nnoremap <M-Down> zm
+nnoremap <M-S-Down> zM
 nnoremap <space> za
 
 setlocal foldmethod=indent

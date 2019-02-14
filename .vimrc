@@ -10,7 +10,7 @@ set incsearch hlsearch
 set noerrorbells
 set vb t_vb=
 
-set listchars=eol:⏎,trail:•,nbsp:⎵,tab:→•
+set listchars=eol:⏎,trail:•,nbsp:⎵,tab:→\ 
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>
 nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>

@@ -14,6 +14,6 @@ set noerrorbells
 set vb t_vb=
 
 set list
-set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+set listchars=eol:⏎,tab:  → ,trail:␠,nbsp:⎵
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>

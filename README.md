@@ -14,10 +14,6 @@ ln -s vimrc/.vimrc ~/.vimrc
 * force quit with C-S-D
 
 ## fold
-* fold more with M-Down
-* fold less with M-Up
+* fold more with M-scroll up
+* fold less with M-scroll down
 * toggle fold with Space
-
-## change
-* revert with M-Left
-* redo   with M-Right

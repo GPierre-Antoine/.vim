@@ -1,5 +1,5 @@
 syntax enable
-set number
+set nu
 set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent
@@ -9,7 +9,7 @@ filetype indent on
 set showmatch
 set incsearch hlsearch
 
-set mouse+=a
+set mouse=a
 set noerrorbells
 set vb t_vb=
 
@@ -17,3 +17,14 @@ set list
 set listchars=eol:⏎,trail:→,nbsp:⎵,tab:→·
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>
+nnoremap <C-W> :call CopyPasteMode()<cr>
+
+function! CopyPasteMode()
+    if &mouse == 'a' 
+        set mouse=v nu nu! list list!
+        syntax off 
+    else
+        set mouse=a nu list
+        syntax on
+    endif
+endfunc

@@ -10,7 +10,7 @@ set incsearch hlsearch
 set noerrorbells
 set vb t_vb=
 
-set listchars=eol:⏎,trail:•,nbsp:⎵,tab:→\ 
+set listchars=eol:⏎,trail:•,nbsp:⎵,tab:→\
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>
 nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>
@@ -20,14 +20,15 @@ nnoremap <C-S-D> :q!<cr>
 
 nnoremap <C-PageUp> gg
 nnoremap <C-PageDown> G
-nnoremap <M-Left> u
-nnoremap <M-Right> <C-R>
+
+nnoremap <C-ScrollWheelUp> u
+nnoremap <C-ScrollWheelDown> <C-R>
 
 nnoremap <M-Up> zr
 nnoremap <M-S-Up> zR
 nnoremap <M-Down> zm
 nnoremap <M-S-Down> zM
-nnoremap <space> za
+nnoremap <space> za 
 
 setlocal foldmethod=indent
 setlocal foldlevel=0
@@ -35,7 +36,7 @@ setlocal foldlevel=0
 function! ToggleCopyPasteMode()
     if &mouse == 'a' 
         set mouse=v nonu nornu nolist
-        syntax off 
+        syntax off
     else
         set mouse=a nu list
         syntax on

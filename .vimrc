@@ -26,4 +26,4 @@ function! ToggleCopyPasteMode()
     endif
 endfunc
 
-call CopyPasteMode()
+call ToggleCopyPasteMode()

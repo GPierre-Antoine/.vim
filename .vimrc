@@ -13,8 +13,10 @@ set vb t_vb=
 set listchars=eol:⏎,trail:→,nbsp:⎵,tab:→·
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>
-nnoremap <C-tab> :call ToggleCopyPasteMode()<cr>
+nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>
 nnoremap <C-D> :q<cr>
+nnoremap <C-PageUp> gg
+nnoremap <C-PageDown> G
 
 function! ToggleCopyPasteMode()
     if &mouse == 'a' 

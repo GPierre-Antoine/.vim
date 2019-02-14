@@ -17,7 +17,7 @@ nnoremap <C-W> :call CopyPasteMode()<cr>
 
 function! CopyPasteMode()
     if &mouse == 'a' 
-        set mouse=v nu nu! list list! relativenumber relativenumber!
+        set mouse=v nonu nornu nolist
         syntax off 
     else
         set mouse=a nu list

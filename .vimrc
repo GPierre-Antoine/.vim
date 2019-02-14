@@ -13,9 +13,10 @@ set vb t_vb=
 set listchars=eol:⏎,trail:→,nbsp:⎵,tab:→·
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>
-nnoremap <C-W> :call CopyPasteMode()<cr>
+nnoremap <C-tab> :call ToggleCopyPasteMode()<cr>
+nnoremap <C-D> :q<cr>
 
-function! CopyPasteMode()
+function! ToggleCopyPasteMode()
     if &mouse == 'a' 
         set mouse=v nonu nornu nolist
         syntax off 

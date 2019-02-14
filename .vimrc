@@ -24,8 +24,8 @@ nnoremap <C-PageDown> G
 nnoremap <C-ScrollWheelUp> u
 nnoremap <C-ScrollWheelDown> <C-R>
 
-nnoremap <M-ScrollWheelUp> zr
-nnoremap <M-ScrollWheelDown> zm
+nnoremap <M-ScrollWheelUp> zm
+nnoremap <M-ScrollWheelDown> zr
 nnoremap <space> za
 
 setlocal foldmethod=indent

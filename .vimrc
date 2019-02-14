@@ -14,7 +14,10 @@ set listchars=eol:⏎,trail:•,nbsp:⎵,tab:→\
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>
 nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>
+
 nnoremap <C-D> :q<cr>
+nnoremap <C-S-D> :q!<cr>
+
 nnoremap <C-PageUp> gg
 nnoremap <C-PageDown> G
 nnoremap <M-Left> u

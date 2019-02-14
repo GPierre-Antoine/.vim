@@ -9,9 +9,11 @@ filetype indent on
 set showmatch
 set incsearch hlsearch
 
-set mouse=a
+set mouse=
 set noerrorbells
 set vb t_vb=
 
+set list
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
 
 nnoremap <C-N><C-N> :set relativenumber!<cr>

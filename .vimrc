@@ -21,8 +21,8 @@ nnoremap <C-S-D> :q!<cr>
 nnoremap <C-PageUp> gg
 nnoremap <C-PageDown> G
 
-nnoremap <C-ScrollWheelUp> u
-nnoremap <C-ScrollWheelDown> <C-R>
+"nnoremap <C-ScrollWheelUp> u
+"nnoremap <C-ScrollWheelDown> <C-R>
 
 nnoremap <M-ScrollWheelUp> zm
 nnoremap <M-ScrollWheelDown> zr

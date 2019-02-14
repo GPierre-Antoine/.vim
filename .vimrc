@@ -17,6 +17,9 @@ nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>
 nnoremap <C-D> :q<cr>
 nnoremap <C-PageUp> gg
 nnoremap <C-PageDown> G
+noremap <M-Left> u
+noremap <M-Right> <C-R>
+
 
 function! ToggleCopyPasteMode()
     if &mouse == 'a' 

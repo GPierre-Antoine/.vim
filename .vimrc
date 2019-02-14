@@ -17,9 +17,12 @@ nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>
 nnoremap <C-D> :q<cr>
 nnoremap <C-PageUp> gg
 nnoremap <C-PageDown> G
-noremap <M-Left> u
-noremap <M-Right> <C-R>
+nnoremap <M-Left> u
+nnoremap <M-Right> <C-R>
+nnoremap <space> za
 
+setlocal foldmethod=indent
+setlocal foldlevel=0
 
 function! ToggleCopyPasteMode()
     if &mouse == 'a' 

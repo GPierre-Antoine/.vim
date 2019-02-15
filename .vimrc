@@ -1,3 +1,5 @@
+set nocompatible
+
 set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent
@@ -30,6 +32,8 @@ nnoremap <space> za
 
 setlocal foldmethod=indent
 setlocal foldlevel=0
+
+set nowrap
 
 function! ToggleCopyPasteMode()
     if &mouse == 'a' 

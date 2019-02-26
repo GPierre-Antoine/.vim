@@ -1,48 +1,60 @@
-set nocompatible
 
-set tabstop=4 softtabstop=4 shiftwidth=4
-set expandtab
-set smartindent
+" set and config
+    set nocompatible tabstop=4 softtabstop=4 shiftwidth=4 expandtab smartindent
+    set showcmd showmatch incsearch hlsearch nowrap backspace=indent,eol,start
+    set noerrorbells vb t_vb=
+    set listchars=eol:⏎,tab:→\ ,trail:•,nbsp:⎵
 
-set showcmd
-filetype indent on
-set showmatch
-set incsearch hlsearch
+    set foldmethod=indent
+    set foldlevel=0
 
-set noerrorbells
-set vb t_vb=
+    filetype indent on
 
-set listchars=eol:⏎,tab:→\ ,trail:•,nbsp:⎵
-
-nnoremap <C-N><C-N> :set relativenumber!<cr>
-nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>
-
-nnoremap <C-D> :q<cr>
-nnoremap <C-S-D> :q!<cr>
-
-nnoremap <C-PageUp> gg
-nnoremap <C-PageDown> G
-
-"nnoremap <C-ScrollWheelUp> u
-"nnoremap <C-ScrollWheelDown> <C-R>
-
-nnoremap <M-ScrollWheelUp> zm
-nnoremap <M-ScrollWheelDown> zr
-nnoremap <space> za
-
-setlocal foldmethod=indent
-setlocal foldlevel=0
-
-set nowrap
-
-function! ToggleCopyPasteMode()
-    if &mouse == 'a' 
-        set mouse=v nonu nornu nolist
-        syntax off 
+    if (has('clipboard'))
+        vnoremap <C-c> "+y
+        nnoremap <C-v> "+p
     else
-        set mouse=a nu list
-        syntax on
+        vnoremap <C-c> :echo "No Clipboard"<cr>
+        nnoremap <C-v> :echo "No Clipboard"<cr>
     endif
-endfunc
 
-call ToggleCopyPasteMode()
+" functions
+     function! ToggleCopyPasteMode()
+         if &mouse == 'a'
+             set mouse=v nonu nornu nolist
+            syntax off
+        else
+             set mouse=a nu list
+            syntax on
+        endif
+    endfunc
+
+    call ToggleCopyPasteMode()
+
+" maps
+    " exit
+        nnoremap <C-d> :q<cr>
+        vnoremap <C-d> <Esc>:q<cr>
+
+    " navigation
+        nnoremap <C-PageUp> gg
+        nnoremap <C-PageDown> G
+
+    " folds
+        nnoremap <space> za
+        inoremap <C-z> <Esc>ui
+        nnoremap <M-ScrollWheelUp> zm
+        nnoremap <M-ScrollWheelDown> zr
+
+    " selection
+        nnoremap <C-w> <Esc>viw
+        vnoremap <C-w> <S-V>
+        nnoremap <C-a> ggvG$
+        vnoremap <C-a> <Esc>ggvG$
+
+    " tabs
+        nnoremap <C-t> :tabnew <cr>
+        nnoremap <C-Right> gt
+        nnoremap <C-Left> gT
+
+    nnoremap <C-Y> :call ToggleCopyPasteMode()<cr>

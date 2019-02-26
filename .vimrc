@@ -11,10 +11,10 @@
     filetype indent on
 
     if (has('clipboard'))
-        vnoremap <C-c> "+y
+        xnoremap <C-c> "+y
         nnoremap <C-v> "+p
     else
-        vnoremap <C-c> :echo "No Clipboard"<cr>
+        xnoremap <C-c> :echo "No Clipboard"<cr>
         nnoremap <C-v> :echo "No Clipboard"<cr>
     endif
 
@@ -33,8 +33,7 @@
 
 " maps
     " exit
-        nnoremap <C-d> :q<cr>
-        vnoremap <C-d> <Esc>:q<cr>
+        noremap <C-d> <Esc>:q<cr>
 
     " navigation
         nnoremap <C-PageUp> gg
@@ -48,9 +47,9 @@
 
     " selection
         nnoremap <C-w> <Esc>viw
-        vnoremap <C-w> <S-V>
+        xnoremap <C-w> <S-V>
         nnoremap <C-a> ggvG$
-        vnoremap <C-a> <Esc>ggvG$
+        xnoremap <C-a> <Esc>ggvG$
 
     " tabs
         nnoremap <C-t> :tabnew <cr>

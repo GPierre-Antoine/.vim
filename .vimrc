@@ -35,6 +35,9 @@
     " exit
         noremap <C-d> <Esc>:q<cr>
 
+    " fs
+        nnoremap <C-o> :vs<cr>:Explore<cr>
+
     " navigation
         nnoremap <C-PageUp> gg
         nnoremap <C-PageDown> G

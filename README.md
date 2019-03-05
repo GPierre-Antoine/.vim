@@ -2,7 +2,7 @@
 My own vimrc
 
 ```bash
-git clone git@github.com/GPierre-Antoine/.vim.git
+git clone git@github.com:GPierre-Antoine/.vim.git
 ```
 
 

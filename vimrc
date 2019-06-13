@@ -29,6 +29,10 @@
         endif
     endfunc
 
+    function! FormatJson()
+        :%!python -m json.tool
+    endfunc
+
     call ToggleCopyPasteMode()
 
 " maps

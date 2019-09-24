@@ -3,6 +3,12 @@
     set nocompatible tabstop=4 softtabstop=4 shiftwidth=4 expandtab smartindent
     set showcmd showmatch incsearch hlsearch nowrap backspace=indent,eol,start
     set noerrorbells vb t_vb=
+
+    set encoding=utf-8
+    set termencoding=utf-8
+    set fileencoding=utf-8
+    set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
     set listchars=eol:⏎,tab:→\ ,trail:•,nbsp:⎵
 
     set foldmethod=indent

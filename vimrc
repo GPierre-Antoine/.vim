@@ -11,11 +11,6 @@
 
     set listchars=eol:⏎,tab:→\ ,trail:•,nbsp:⎵
 
-    set foldmethod=indent
-    set foldlevel=0
-
-    filetype indent on
-
     if (has('clipboard'))
         xnoremap <C-c> "+y
         nnoremap <C-v> "+p
